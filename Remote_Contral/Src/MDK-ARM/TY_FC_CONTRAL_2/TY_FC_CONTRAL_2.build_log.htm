@@ -1,0 +1,104 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¶ÃVision V5.43.1.0
+Copyright (C) 2025 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1779457, HP Inc., LIC=MPPLD-8GTCF-45ST5-GRL9P-26WJ6-0AQQR
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.43.0.0
+Toolchain Path:  C:\keil5\core\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.43.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.1.0
+Dialog DLL:      TCM.DLL V1.56.6.0
+ 
+<h2>Project:</h2>
+C:\study\FC\TY_FC_CONTRAL_2\MDK-ARM\TY_FC_CONTRAL_2.uvprojx
+Project File Date:  03/01/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\keil5\core\ARM\ARMCC\Bin'
+Rebuild target 'TY_FC_CONTRAL_2'
+compiling Font_ASCII.c...
+assembling startup_stm32f103xb.s...
+compiling ssd1306.c...
+..\Core\Src\ssd1306.c(516): warning:  #223-D: function "sprintf" declared implicitly
+      sprintf(format, "%%%d.%df", int_len, dec_len);
+..\Core\Src\ssd1306.c: 1 warning, 0 errors
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling stm32f1xx_it.c...
+compiling main.c...
+compiling adc.c...
+compiling nrf.c...
+..\Core\Src\nrf.c(61): warning:  #870-D: invalid multibyte character sequence
+    NRF_LOGI("STATUSÔº?0x%02XÔº?0x00/0xFFÔºâ\r\n", status_reg); // ÊõøÊç¢printf
+..\Core\Src\nrf.c(61): warning:  #870-D: invalid multibyte character sequence
+    NRF_LOGI("STATUSÔº?0x%02XÔº?0x00/0xFFÔºâ\r\n", status_reg); // ÊõøÊç¢printf
+..\Core\Src\nrf.c(82): warning:  #870-D: invalid multibyte character sequence
+    NRF_LOGI("STATUSÔº?0x%02X | FIFO_STATUSÔº?0x%02X\r\n", status, fifo_status); 
+..\Core\Src\nrf.c(82): warning:  #870-D: invalid multibyte character sequence
+    NRF_LOGI("STATUSÔº?0x%02X | FIFO_STATUSÔº?0x%02X\r\n", status, fifo_status); 
+..\Core\Src\nrf.c(106): warning:  #870-D: invalid multibyte character sequence
+    NRF_LOGI("STATUSÔº?0x%02X | FIFO_STATUSÔº?0x%02X\r\n", status, fifo_status);
+..\Core\Src\nrf.c(106): warning:  #870-D: invalid multibyte character sequence
+    NRF_LOGI("STATUSÔº?0x%02X | FIFO_STATUSÔº?0x%02X\r\n", status, fifo_status);
+..\Core\Src\nrf.c: 6 warnings, 0 errors
+compiling NRF24L01.c...
+..\Core\Src\NRF24L01.c(35): warning:  #177-D: function "OLED_Log_Clear"  was declared but never referenced
+  static void OLED_Log_Clear(void);
+..\Core\Src\NRF24L01.c: 1 warning, 0 errors
+compiling stm32f1xx_hal_msp.c...
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_adc_ex.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_adc.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling system_stm32f1xx.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling stm32f1xx_hal_exti.c...
+compiling stm32f1xx_hal_spi.c...
+compiling stm32f1xx_hal_i2c.c...
+linking...
+Program Size: Code=20210 RO-data=1418 RW-data=56 ZI-data=2968  
+FromELF: creating hex file...
+"TY_FC_CONTRAL_2\TY_FC_CONTRAL_2.axf" - 0 Error(s), 8 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.2.0.pack
+                ARM::CMSIS@6.2.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.1
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil::STM32F1xx_DFP@2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_TY_FC_CONTRAL_2
+  C:/keil5/packge/ARM/CMSIS/6.2.0/CMSIS/Core/Include
+  C:/keil5/packge/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.1
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>

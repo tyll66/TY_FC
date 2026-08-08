@@ -1,0 +1,120 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ��Vision V5.43.1.0
+Copyright (C) 2025 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1779457, HP Inc., LIC=MPPLD-8GTCF-45ST5-GRL9P-26WJ6-0AQQR
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.43.0.0
+Toolchain Path:  C:\keil5\core\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.43.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.1.0
+Dialog DLL:      TCM.DLL V1.56.6.0
+ 
+<h2>Project:</h2>
+C:\study\FC\TY_FC_3\MDK-ARM\TY_FC_3.uvprojx
+Project File Date:  06/14/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\keil5\core\ARM\ARMCC\Bin'
+Rebuild target 'TY_FC_3'
+compiling Filter.c...
+assembling startup_stm32f405xx.s...
+compiling ADRC.c...
+../Core/Inc/ADRC.h(34): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Core\Src\ADRC.c(69): warning:  #1-D: last line of file ends without a newline
+  }
+..\Core\Src\ADRC.c: 2 warnings, 0 errors
+compiling PID.c...
+compiling stm32f4xx_hal_i2c_ex.c...
+compiling stm32f4xx_it.c...
+compiling stm32f4xx_hal_msp.c...
+compiling NRF24L01.c...
+..\Core\Src\NRF24L01.c(831): warning:  #870-D: invalid multibyte character sequence
+      printf("\n=== NRF24L01 接收�? 单端自测开�? ===\r\n");
+..\Core\Src\NRF24L01.c(831): warning:  #870-D: invalid multibyte character sequence
+      printf("\n=== NRF24L01 接收�? 单端自测开�? ===\r\n");
+..\Core\Src\NRF24L01.c(837): warning:  #870-D: invalid multibyte character sequence
+      printf("写RF_CH=66后读�?: %d\r\n", reg_val);
+..\Core\Src\NRF24L01.c(849): warning:  #870-D: invalid multibyte character sequence
+      printf("切到RX模式�? STATUS: 0x%02X\r\n", status_val);
+..\Core\Src\NRF24L01.c(856): warning:  #870-D: invalid multibyte character sequence
+      printf("4. 接收端硬�?: %s\r\n", (reg_val == 66) ? "可以使用" : "请检查接�?/电源");
+..\Core\Src\NRF24L01.c(856): warning:  #870-D: invalid multibyte character sequence
+      printf("4. 接收端硬�?: %s\r\n", (reg_val == 66) ? "可以使用" : "请检查接�?/电源");
+..\Core\Src\NRF24L01.c: 6 warnings, 0 errors
+compiling main.c...
+../Core/Src/main.c(177): warning:  #177-D: variable "last_log"  was declared but never referenced
+  	static uint32_t last_log = 0;
+../Core/Src/main.c(178): warning:  #177-D: variable "last_time"  was declared but never referenced
+    static uint32_t last_time = 0;
+../Core/Src/main.c(179): warning:  #177-D: variable "run_time"  was declared but never referenced
+    uint32_t run_time = 0;
+../Core/Src/main.c(831): warning:  #223-D: function "fabs" declared implicitly
+    if (fabs(Target_State.last_speed-Target_State.target_speed) >= 2.5 || lost_count >= 30)
+../Core/Src/main.c(833): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      Target_State.target_speed = Target_State.last_speed - 0.003;
+../Core/Src/main.c: 5 warnings, 0 errors
+compiling MPU6050_0.c...
+..\Core\Src\MPU6050_0.c(108): warning:  #870-D: invalid multibyte character sequence
+  	printf("MPU6050开始校准，请保持设备静�?...\r\n");
+..\Core\Src\MPU6050_0.c: 1 warning, 0 errors
+compiling stm32f4xx_hal_i2c.c...
+compiling stm32f4xx_hal_dma.c...
+compiling stm32f4xx_hal_flash_ramfunc.c...
+compiling stm32f4xx_hal_gpio.c...
+compiling stm32f4xx_hal_flash_ex.c...
+compiling stm32f4xx_hal_dma_ex.c...
+compiling stm32f4xx_hal_rcc_ex.c...
+compiling stm32f4xx_hal_flash.c...
+compiling stm32f4xx_hal_rcc.c...
+compiling stm32f4xx_hal_pwr.c...
+compiling stm32f4xx_hal.c...
+compiling stm32f4xx_hal_tim_ex.c...
+compiling stm32f4xx_hal_cortex.c...
+compiling stm32f4xx_hal_pwr_ex.c...
+compiling stm32f4xx_hal_exti.c...
+compiling stm32f4xx_hal_spi.c...
+compiling stm32f4xx_hal_tim.c...
+compiling system_stm32f4xx.c...
+compiling stm32f4xx_hal_uart.c...
+linking...
+Program Size: Code=23704 RO-data=512 RW-data=364 ZI-data=4900  
+FromELF: creating hex file...
+"TY_FC_3\TY_FC_3.axf" - 0 Error(s), 14 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.2.0.pack
+                ARM::CMSIS@6.2.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.1
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.3.1.1.pack
+                Keil::STM32F4xx_DFP@3.1.1
+                STMicroelectronics STM32F4 Series Device Support
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_TY_FC_3
+  C:/keil5/packge/ARM/CMSIS/6.2.0/CMSIS/Core/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.1
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:15
+</pre>
+</body>
+</html>

@@ -1,0 +1,29 @@
+# 编译输出
+Debug/
+Release/
+build/
+
+# 编译中间文件
+*.o
+*.d
+*.su
+*.cyclo
+
+# 二进制输出
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# VS Code
+.vscode/
+
+# 临时文件
+*.tmp
+*.bak
+*.swp
